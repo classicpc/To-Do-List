@@ -39,13 +39,6 @@ This To-Do List web application is designed to help users organize their tasks e
 5. Mark tasks as complete by clicking on them.
 6. Delete tasks by clicking the "Delete" button next to each task.
 
-## Contributors
-
-- Pranav Ashok Chaudhari - Backend Developer and Report
-- Prit Raiyani - Diagrams and Backend Developer
-- Khushpreet Kaur - Frontend Developer
-- Mohit Gajula - Presentation and Frontend Developer
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
