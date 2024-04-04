@@ -5,6 +5,8 @@
 
 This To-Do List web application is designed to help users organize their tasks efficiently. It's built using HTML, CSS, PHP, JavaScript, and MySQL, providing various functions such as adding tasks, setting due dates, prioritizing tasks through drag-and-drop, marking tasks as complete, and deleting tasks.
 
+!!! THERE IS A PROBLEM THAT I CANT SEE TASK NAME AND CANT MARK TASK AS COMPLETE OR DELETE IN THE DATABASE!!!
+
 ## Features
 
 - **Add Task**: Easily add new tasks to your to-do list.
