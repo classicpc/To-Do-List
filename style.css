@@ -1,146 +1,89 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -ms-user-select: none; 
-    user-select: none; 
-  }
+/* Set general styling for the body */
+body {
+    padding: 50px; /* Add padding around the content */
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: #f8f9fa; /* Set background color */
+}
 
-  body {
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-color: LightSkyBlue;
-  }
+/* Style for the main container */
+.container {
+    max-width: 400px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 30px; /* Add padding inside container */
+    background-color: #fff; /* Set background color */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
 
-  .container {
-    width: 90%;
-    max-width: 34em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
+/* Style for form groups */
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+}
 
-  #todo-title {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    color: White;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 2px solid White;
-    border-radius: 5px;
-    background-color: Black;
-  }
+/* Style for form inputs */
+.form-control {
+    width: 100%; /* Take up full width */
+    padding: 10px; /* Add padding inside input */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add rounded corners */
+    transition: border-color 0.3s ease; /* Add smooth transition for border color */
+}
 
-  #instruction {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9em;
-    color: White;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background: linear-gradient(to right, Black, Grey, Grey, Black);
-  }
+/* Style for focused form inputs */
+.form-control:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
 
-  #new-task {
-    position: relative;
-    background-color: White;
-    padding: 1.8em 1.25em;
-    border-radius: 0.3em;
-    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
-    display: grid;
-    grid-template-columns: 7fr 3fr 2fr;
-    gap: 1em;
-  }
+/* Style for form buttons */
+.form-btn {
+    text-align: center; /* Center-align form buttons */
+}
 
-  #new-task input {
-    font-family: "Poppins", sans-serif;
-    font-size: 1em;
-    border: none;
-    border-bottom: 2px solid whitesmoke;
-    outline: none;
-    padding: 0.6em 0;
-    width: 100%;
-  }
+/* Style for generic buttons */
+.btn {
+    padding: 10px 20px; /* Add padding inside button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #007bff; /* Set button background color */
+    color: #fff; /* Set button text color */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
 
-  #new-task button {
-    font-family: "Poppins", sans-serif;
-    font-size: 1em;
-    color: White;
-    padding: 0.8em 0;
-    width: 100%;
-    background-color: Blue;
-    border-radius: 0.5em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
 
-  #tasks-title {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    color: Black;
-    margin-top: 1em;
-    font-weight: bold;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    background-color: WhiteSmoke;
-    border-radius: 0.5em;
-  }
+/* Style for alert messages */
+.alert {
+    padding: 10px; /* Add padding inside alert */
+    margin-bottom: 20px; /* Add spacing between alerts */
+    border-radius: 5px; /* Add rounded corners */
+}
 
-  #tasks {
-    background-color: White;
-    position: relative;
-    padding: 1.8em 1.25em;
-    margin-top: 1em;
-    width: 100%;
-    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
-    border-radius: 0.6em;
-  }
+/* Style for danger alert messages */
+.alert-danger {
+    background-color: #f8d7da; /* Set alert background color */
+    color: #721c24; /* Set alert text color */
+    border: 1px solid #f5c6cb; /* Add border */
+}
 
-  .task {
-    background-color: White;
-    padding: 0.8em;
-    margin-top: 0.6em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid white;
-    cursor: grab;
-  }
+/* Style for success alert messages */
+.alert-success {
+    background-color: #d4edda; /* Set alert background color */
+    color: #155724; /* Set alert text color */
+    border: 1px solid #c3e6cb; /* Add border */
+}
 
-  .task span {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9em;
-    font-weight: 400;
-    display: inline-block;
-    width: 70%;
-  }
+/* Style for hyperlinks */
+a {
+    text-decoration: none; /* Remove default underline */
+    color: #007bff; /* Set hyperlink color */
+}
 
-  .task button {
-    color: White;
-    padding: 0.8em 0.5em;
-    background-color: red;
-    border: none;
-    border-radius: 0.5em;
-    outline: none;
-    cursor: pointer;
-    width: 30%;
-  }
-
-  .completed span {
-    text-decoration: line-through;
-  }
-
-  .completed {
-    background-color: MediumSeaGreen;
-  }
+/* Hover effect for hyperlinks */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
